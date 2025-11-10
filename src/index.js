@@ -26,7 +26,7 @@ function createQRCode() {
     const colors = getQRColors();
     qrContainer.innerHTML = '';
     new QRCode(qrContainer, {
-        text: window.location.origin,
+        text: window.location.href,
         width: qrContainer.parentElement.offsetWidth,
         height: qrContainer.parentElement.offsetWidth,
         colorDark: colors.txtColor,

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="shortcut icon" href="./src/public/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="header">
+        <select id="selector"></select>
+        <h1 class="title" data-locale="title"></h1>
+        <button id="theme-toggle">
+            <svg class="sun-icon" data-lucide="sun"></svg>
+            <svg class="moon-icon" data-lucide="moon"></svg>
+        </button>
+    </header>
+
+    <main class="main">
+        <div class="information">
+            <img class="img" src="./src/public/image.jpg" alt="">
+            <hr class="divider"></hr>
+            <div class="main-info">
+                <p class="name" data-locale="main.name"></p>
+                <p class="age" data-locale="main.age"></p>
+                <div class="qr-container">
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div>
+                <h2 data-locale="skills.titles.technologies" class="tecno-title"></h2>
+                <ul class="technologies">
+                    <li data-locale="skills.technologies.js"></li>
+                    <li data-locale="skills.technologies.node"></li>
+                    <li data-locale="skills.technologies.git"></li>
+                    <li data-locale="skills.technologies.kotlin"></li>
+                    <li data-locale="skills.technologies.sql"></li>
+                    <li data-locale="skills.technologies.deploy"></li>
+                </ul>
+            </div>
+            <div>
+                <h2 data-locale="skills.titles.frameworks" class="frame-title"></h2>
+                <ul class="frameworks">
+                    <li data-locale="skills.frameworks.vue"></li>
+                    <li data-locale="skills.frameworks.jc"></li>
+                    <li data-locale="skills.frameworks.react"></li>
+                    <li data-locale="skills.frameworks.express"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <h2 data-locale="about-me-title"></h2>
+            <p data-locale="about-me"></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="links">
+            <div class="link-container">
+                <div data-lucide="github" class="link-img"></div>
+                <a href="https://github.com/daemuun/" data-locale="links.github" class="link"></a>
+            </div>
+            <div class="link-container">
+                <div data-lucide="mail" class="link-img"></div>
+                <a href="mailto:dudmitry.iv@gmail.com" data-locale="links.email" class="link"></a>
+            </div>
+            <div class="link-container">
+                <div data-lucide="send" class="link-img"></div>
+                <a href="https://t.me/daemuun" data-locale="links.telegram" class="link"></a>
+            </div>
+            <div class="link-container">
+                <div data-lucide="phone" class="link-img"></div>
+                <a href="tel:+79218840318" data-locale="links.phone" class="link"></a>
+            </div>
+        </div>
+        <div data-locale="copyright" class="copyright"></div>
+    </footer>
+
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+:root {
+    --background-color: #f5f7fa;
+    --text-color: #2d3748;
+    --primary: #e8ecf1;
+    --max-width: 1200px;
+}
+
+.dark-theme {
+    --background-color: #1a202c;
+    --text-color: #f7fafc;
+    --primary: #11161f;
+}
+
+html {
+    background-color: var(--primary);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 1.2rem;
+    text-align: center;
+    grid-column: 2;
+    color: var(--text-color);
+}
+
+#selector {
+    justify-self: start;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.moon-icon,
+.name,
+.age,
+.technologies,
+.frameworks,
+.tecno-title,
+.frame-title,
+.about-me,
+.copyright {
+    color: var(--text-color);
+}
+
+.main {
+    margin: 10px;
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.information,
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: 45vw;
+    max-width: 500px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+}
+
+.main-info {
+    flex: 1;
+    margin: 10px;
+}
+
+.name,
+.age {
+    font-size: 1rem;
+}
+
+.divider {
+    border: 1px solid var(--text-color);
+}
+
+.qr-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid var(--text-color);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.links {
+    margin: 10px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 2px;
+}
+
+.link:link,
+.link:visited {
+    color: var(--text-color);
+}
+
+.link-img {
+    padding-right: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    body {
+        border-radius: 20px;
+    }
+
+    .name,
+    .age {
+        font-size: 1.2rem;
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .img {
+        margin: 40px;
+    }
+
+    .main-info {
+        margin: 40px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+}

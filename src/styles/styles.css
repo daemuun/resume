@@ -11,11 +11,9 @@
     --primary: #11161f;
 }
 
-html {
-    background-color: var(--primary);
-}
 
-body {
+
+body, html {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
@@ -23,6 +21,10 @@ body {
     max-width: var(--max-width);
     width: 100%;
     box-sizing: border-box;
+}
+
+html {
+    background-color: var(--primary);
 }
 
 #theme-toggle {
@@ -69,6 +71,12 @@ body {
 .about-me,
 .copyright {
     color: var(--text-color);
+}
+
+.tecno-title,
+.frame-title {
+    font-size: large;
+    margin: 20px 0px 20px 0px;
 }
 
 .main {
